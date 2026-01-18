@@ -1,12 +1,12 @@
 {
-  "name": "@kevinzhao/shared",
-  "version": "1.0.1",
+  "name": "@zhaokm8093/shared",
+  "version": "1.0.2",
   "description": "Shared utilities for bed and pillow",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KevinZhao/shared.git"
+    "url": "https://github.com/zhaokm8093/shared.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
