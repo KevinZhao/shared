@@ -37,4 +37,22 @@ export interface LoggerConfig {
   showTimestamp: boolean;
   /** 是否显示 emoji */
   showEmoji: boolean;
+  /** 模块名称 (可选) */
+  module?: string;
+  /** 模块颜色 (可选, 用于控制台样式) */
+  moduleColor?: string;
+  /** 采样率 0-1 (可选, 1=全部记录, 0.1=10%采样, ERROR 级别始终记录) */
+  samplingRate?: number;
+}
+
+/**
+ * 模块日志器 - 带额外便捷方法
+ */
+export interface ModuleLogger extends Logger {
+  success(message: string, ...args: unknown[]): void;
+  failure(message: string, ...args: unknown[]): void;
+  group(title: string): void;
+  groupEnd(): void;
+  time(label: string): void;
+  timeEnd(label: string): void;
 }
