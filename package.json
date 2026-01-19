@@ -1,6 +1,7 @@
 {
-  "name": "@zhaokm8093/shared",
-  "version": "1.0.4",
+  "name": "@daydream/shared",
+  "version": "1.0.5",
+  "private": true,
   "description": "Shared utilities for bed and pillow",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
